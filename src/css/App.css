@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+.App p {
+  font-size: 24px;
+}
+
 .App-logo {
   height: 100px;
   pointer-events: none;
@@ -27,15 +31,22 @@
   font-size: 100px;
   padding: 25px;
   border-radius: 50%;
-  background-color: #fc0657;
   margin-bottom: 20px;
   transition: all 0.3s ease-in-out;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+  background-color: #c42257;
 }
+
+.has-icons .row > div {
+  margin: 30px 0;
+}
+
 .has-icons .row > div:hover {
   cursor: pointer;
 }
-.has-icons .row > div:hover svg, .has-icons .row > div:hover p {
+
+.has-icons .row > div:hover svg {
+  background-color: goldenrod;
   transform: scale(1.1);
   transition: all 0.3s ease-in-out;
 }
