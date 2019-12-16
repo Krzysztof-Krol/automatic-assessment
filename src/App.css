@@ -3,18 +3,13 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 100px;
   pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    /* animation: App-logo-spin infinite 20s linear; */
-  }
+  margin-bottom: 20px;
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #313256;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -28,11 +23,19 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.has-icons svg {
+  font-size: 100px;
+  padding: 25px;
+  border-radius: 50%;
+  background-color: #fc0657;
+  margin-bottom: 20px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+}
+.has-icons .row > div:hover {
+  cursor: pointer;
+}
+.has-icons .row > div:hover svg, .has-icons .row > div:hover p {
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
 }
