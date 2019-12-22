@@ -1,18 +1,13 @@
 import React from 'react';
 import './css/App.css';
-import logo from './images/royalcode-logo.svg';
-import Services from './components/Services';
-
+import AssessmentForm from './components/AssessmentForm';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header d-flex align-items-center">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1 className="mb-3">Wycena usług programistycznych</h1>
-        <Services />
-        {/* <Materials /> */}
-      </header>
+      <div className="App-header d-flex align-items-center">
+        <AssessmentForm />
+      </div>
     </div>
   );
 }
