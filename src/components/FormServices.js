@@ -19,21 +19,42 @@ const Service = (props) => {
   );
 }
 
-
-
-
-
 const FormServices = () => {
   const [services, setServices] = useState([
     {
       name: 'website',
       title: 'Strona internetowa',
-      icon: {WebIcon}
+      icon: <WebIcon/>
     },
     {
       name: 'shop',
       title: 'Sklep internetowy',
-      icon: {StorefrontIcon}
+      icon: <StorefrontIcon/>
+    },
+    {
+      name: 'seo',
+      title: 'Optymalizacja SEO',
+      icon: <SpeedIcon/>
+    },
+    {
+      name: 'positioning',
+      title: 'Pozycjonowanie',
+      icon: <TrendingUpIcon/>
+    },
+    {
+      name: 'repair',
+      title: 'Naprawa strony',
+      icon: <BuildIcon/>
+    },
+    {
+      name: 'webapp',
+      title: 'Aplikacja internetowa',
+      icon: <TrendingUpIcon/>
+    },
+    {
+      name: 'other',
+      title: 'Inne zlecenia',
+      icon: <CodeIcon/>
     }
   ]);
   return (
@@ -44,46 +65,16 @@ const FormServices = () => {
         Wybierz temat, który Cię interesuje.
       </p>
       <Row className="d-flex flex-row justify-content-center">
-
-        {/* {
-          services.map(service => (
-            <Col xs="12" sm="6" md="4" xl="3">
-              {service.icon}
-              {service.title}
-            </Col>
-          ))
-        } */}
-
-        <Service serviceName="Strona internetowa">
-          <WebIcon />
-        </Service>
-
-        <Service 
-          serviceName="Sklep internetowy"
-        >
-          <StorefrontIcon />
-        </Service>
-
-        <Service serviceName="Optymalizacja SEO">
-          <SpeedIcon />
-        </Service>
-
-        <Service serviceName="Pozycjonowanie">
-          <TrendingUpIcon />
-        </Service>
-
-        <Service serviceName="Naprawa strony">
-          <BuildIcon />
-        </Service>
-
-        <Service serviceName="Aplikacja internetowa">
-          <AppsIcon />
-        </Service>
-
-        <Service serviceName="Inne zlecenie">
-          <CodeIcon />
-        </Service>
-
+        {
+          services.map((item, index) => {
+            return (
+              <Service key={"service" + index} serviceName={item["title"]}>
+                {item["icon"]}
+              </Service>
+          );
+          }
+          )
+        }
       </Row>
     </Container>
   );
