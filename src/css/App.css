@@ -3,7 +3,26 @@
 }
 
 .App p {
-  font-size: 24px;
+  font-size: 20px;
+}
+
+.App strong {
+  font-weight: 600;
+  color: #68ce57;
+}
+
+.item-desc{
+  font-size: 16px !important;
+  margin-bottom: 0 !important;
+  color: gray;
+}
+
+.small {
+  font-size: 16px;
+}
+
+.App p.description {
+  font-size: 18px;
 }
 
 .App-logo {
@@ -49,4 +68,8 @@
   background-color: goldenrod;
   transform: scale(1.1);
   transition: all 0.3s ease-in-out;
+}
+
+.App h1{
+  font-size: 33px;
 }
