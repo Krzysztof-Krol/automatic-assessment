@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import FormServices from './FormServices';
 import FormMaterials from './FormMaterials';
+import FormShopProject from './FormShopProject';
+import FormWebsiteProject from './FormWebsiteProject';
+import FormLanguages from './FormLanguages';
 
 export class AssessmentForm extends Component {
     render() {
@@ -8,6 +11,9 @@ export class AssessmentForm extends Component {
             <div>
                 <FormServices />
                 <FormMaterials />
+                <FormShopProject />
+                <FormWebsiteProject />
+                <FormLanguages />
             </div>
         )
     }

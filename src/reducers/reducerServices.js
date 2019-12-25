@@ -22,7 +22,7 @@ export default function() {
             icon: <StorefrontIcon/>
         },
         {
-            id: 10,
+            id: 16,
             name: 'optimization',
             title: 'Optymalizacja SEO',
             icon: <SpeedIcon />

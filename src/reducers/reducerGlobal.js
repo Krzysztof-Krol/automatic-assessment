@@ -2,7 +2,8 @@ export default function() {
     return [
         {
             service: '',
-            totalPrice: 1
+            totalPrice: 0,
+            multiplier: 1
         }
     ]
 }

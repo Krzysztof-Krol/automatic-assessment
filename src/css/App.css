@@ -11,10 +11,16 @@
   color: #68ce57;
 }
 
+.App .price {
+  color: #68ce57;
+  font-size: 16px;
+  font-weight: 600;
+}
+
 .item-desc{
   font-size: 16px !important;
   margin-bottom: 0 !important;
-  color: gray;
+  color: lightgray;
 }
 
 .small {
@@ -72,4 +78,42 @@
 
 .App h1{
   font-size: 33px;
+}
+
+.App .MuiOutlinedInput-notchedOutline {
+	border-color: rgba(255, 255, 255, 0.4);
+}
+
+.App .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+	border-color: rgba(255, 255, 255, 0.87);
+}
+
+.App .MuiInputBase-root {
+	color: rgba(255, 255, 255, 0.87);
+	cursor: text;
+	display: inline-flex;
+	position: relative;
+	font-size: 1rem;
+	box-sizing: border-box;
+	align-items: center;
+	font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+	line-height: 1.1875em;
+}
+
+.App .MuiFormLabel-root {
+	color: rgba(255, 255, 255, 0.54);
+	padding: 0;
+	font-size: 1rem;
+	font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+	font-weight: 400;
+	line-height: 1;
+	letter-spacing: 0.00938em;
+}
+
+.App .MuiFormLabel-root.Mui-focused {
+  color: #c42257;
+}
+
+.App .MuiOutlinedInput-notchedOutline:focus {
+	border-color: #c42257;
 }

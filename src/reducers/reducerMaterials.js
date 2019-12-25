@@ -2,7 +2,6 @@ import React from 'react';
 import PlaylistAddCheckIcon from '@material-ui/icons/PlaylistAddCheck';
 import HourglassFullIcon from '@material-ui/icons/HourglassFull';
 
-
 export default function() {
     return [
         {

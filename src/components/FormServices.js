@@ -4,7 +4,6 @@ import logo from '../images/royalcode-logo.svg'
 import Service from './common/Service';
 import {connect} from 'react-redux';
 
-
 class FormServices extends Component {
 
   listAllItems() {
