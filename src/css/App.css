@@ -61,16 +61,32 @@
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
   background-color: #c42257;
 }
+.MuiRadio-root svg {
+  font-size: inherit;
+  padding: inherit;
+  border-radius: inherit;
+  margin-bottom: inherit;
+  transition: inherit;
+  box-shadow: inherit;
+  background-color: inherit;
+  font-size: 1.5rem;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.App .MuiRadio-root {
+	color: rgba(255, 255, 255, 0.9);
+}
 
 .has-icons .row > div {
   margin: 30px 0;
 }
 
-.has-icons .row > div:hover {
+.has-icons .row div > svg:hover,
+.has-icons .row div > a:hover {
   cursor: pointer;
 }
 
-.has-icons .row > div:hover svg {
+.has-icons .row > div svg:hover {
   background-color: goldenrod;
   transform: scale(1.1);
   transition: all 0.3s ease-in-out;

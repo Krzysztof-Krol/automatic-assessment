@@ -4,6 +4,7 @@ import FormMaterials from './FormMaterials';
 import FormShopProject from './FormShopProject';
 import FormWebsiteProject from './FormWebsiteProject';
 import FormLanguages from './FormLanguages';
+import FormShopExtraFeatures from './FormShopExtraFeatures';
 
 export class AssessmentForm extends Component {
     render() {
@@ -14,9 +15,10 @@ export class AssessmentForm extends Component {
                 <FormShopProject />
                 <FormWebsiteProject />
                 <FormLanguages />
+                <FormShopExtraFeatures />
             </div>
         )
     }
 }
 
-export default AssessmentForm
+export default AssessmentForm;

@@ -9,7 +9,10 @@ import * as serviceWorker from './serviceWorker';
 import {Provider} from 'react-redux';
 import {createStore} from 'redux';
 import allReducers from './reducers/allReducers';
-const store = createStore(allReducers);
+const store = createStore(
+    allReducers, 
+    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+);
 
 // End of redux data 
 

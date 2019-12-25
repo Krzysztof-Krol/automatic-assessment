@@ -3,7 +3,14 @@ export default function() {
         {
             service: '',
             totalPrice: 0,
-            multiplier: 1
+            multiplier: 1,
+            moreLanguages: [
+                {
+                    quantity: 0,
+                    implementByClient: 0,
+                    implementCost: 300
+                }
+            ]
         }
     ]
 }

@@ -5,6 +5,7 @@ import reducerMaterials from './reducerMaterials';
 import reducerShopProject from './reducerShopProject';
 import reducerWebsiteProject from './reducerWebsiteProject';
 import reducerLanguages from './reducerLanguages';
+import reducerShopExtraFeatures from './reducerShopExtraFeatures';
 
 const allReducers = combineReducers({
     global: reducerGlobal,
@@ -12,7 +13,8 @@ const allReducers = combineReducers({
     materials: reducerMaterials,
     shopProject: reducerShopProject,
     websiteProject: reducerWebsiteProject,
-    languages: reducerLanguages
+    languages: reducerLanguages,
+    shopExtraFeatures: reducerShopExtraFeatures
 });
 
 export default allReducers;
