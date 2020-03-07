@@ -8,6 +8,7 @@ import FormShopExtraFeatures from './FormShopExtraFeatures';
 import FormSeoActions from './FormSeoActions';
 import FormTechServices from './FormTechServices';
 import FormExpressProduction from './FormExpressProduction';
+import FormSummary from './FormSummary';
 import {connect} from 'react-redux';
 
 
@@ -24,6 +25,7 @@ export class AssessmentForm extends Component {
                 <FormSeoActions />
                 <FormTechServices />
                 <FormExpressProduction />
+                <FormSummary />
             </div>
         )
     }
