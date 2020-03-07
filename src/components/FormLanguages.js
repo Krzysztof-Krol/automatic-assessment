@@ -9,7 +9,7 @@ import FormControl from '@material-ui/core/FormControl';
 import FormLabel from '@material-ui/core/FormLabel';
 import {connect} from 'react-redux';
 
-class FormMaterials extends Component {
+class FormLanguages extends Component {
 
     listAllItems() {
         return this.props.languages.map((item) => {
@@ -81,4 +81,4 @@ function mapStateToProps(state){
   }
 }
 
-export default connect(mapStateToProps)(FormMaterials);
+export default connect(mapStateToProps)(FormLanguages);

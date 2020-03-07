@@ -8,6 +8,7 @@ import reducerLanguages from './reducerLanguages';
 import reducerShopExtraFeatures from './reducerShopExtraFeatures';
 import reducerSeoAcrions from './reducerSeoActions';
 import reducerTechServices from './reducerTechServices';
+import reducerExpressProduction from './reducerExpressProduction';
 
 const allReducers = combineReducers({
     global: reducerGlobal,
@@ -18,7 +19,8 @@ const allReducers = combineReducers({
     languages: reducerLanguages,
     shopExtraFeatures: reducerShopExtraFeatures,
     seoActions: reducerSeoAcrions,
-    techServices: reducerTechServices
+    techServices: reducerTechServices,
+    expressProduction: reducerExpressProduction
 });
 
 export default allReducers;

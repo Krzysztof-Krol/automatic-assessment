@@ -7,6 +7,9 @@ import FormLanguages from './FormLanguages';
 import FormShopExtraFeatures from './FormShopExtraFeatures';
 import FormSeoActions from './FormSeoActions';
 import FormTechServices from './FormTechServices';
+import FormExpressProduction from './FormExpressProduction';
+import {connect} from 'react-redux';
+
 
 export class AssessmentForm extends Component {
     render() {
@@ -20,9 +23,16 @@ export class AssessmentForm extends Component {
                 <FormShopExtraFeatures />
                 <FormSeoActions />
                 <FormTechServices />
+                <FormExpressProduction />
             </div>
         )
     }
 }
 
-export default AssessmentForm;
+function mapStateToProps(state){
+    return{
+        global: state.global,
+    }
+}
+  
+export default connect(mapStateToProps)(AssessmentForm);

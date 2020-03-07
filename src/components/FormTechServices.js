@@ -26,8 +26,8 @@ class FormTechServices extends Component {
             <Container className="has-icons mb-5">
                 <Row>
                     <Col xs="12" sm="12" md="12" lg={{offset: 1, size: 10}} className="mx-auto">
-                        <h2 className="mb-3">SEO dla strony</h2>
-                        <p className="description mb-3">Aby zdobyć ruch dla strony, warto zadbać o dostosowanie do wyszukiwarek i zadbanie, by wyróżnić się w Google.</p>
+                        <h2 className="mb-3">Pozostałe opcje</h2>
+                        {/* <p className="description mb-3"></p> */}
                     </Col>
                 </Row>
                 <Row className="d-flex flex-row justify-content-center">
