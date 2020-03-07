@@ -6,7 +6,7 @@ const Switch = (props) => {
     return (
       <Col xs="12" sm="6" md="4" xl={props.xl ? props.xl : '3'}>
         <p>{props.title}</p>
-        <Checkbox />
+        <Checkbox className="form-checkbox"/>
         {props.children}
       </Col>
     );

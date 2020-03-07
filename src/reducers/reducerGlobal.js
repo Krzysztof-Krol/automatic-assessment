@@ -2,7 +2,8 @@ export default function() {
     return [
         {
             service: '',
-            totalPrice: 0,
+            totalPriceNet: 0,
+            totalPriceGross: 0,
             multiplier: 1,
             moreLanguages: [
                 {

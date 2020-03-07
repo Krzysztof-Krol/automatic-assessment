@@ -9,6 +9,14 @@ export default function() {
             icon: ''
         },
         {
+            id: 631,
+            name: 'googleMap',
+            title: 'Mapa Google',
+            price: 80,
+            desc: 'Stylizowana mapa Google pokaże gdzie jest Twoja firma i podkreśli kompozycję strony',
+            icon: ''
+        },
+        {
             id: 695,
             name: 'newsletter',
             title: 'Newsletter',
@@ -39,15 +47,7 @@ export default function() {
             price: 80,
             desc: 'Sprawdź statystyki Twojego sklepu internetowego i generuj raporty',
             icon: ''
-        },   
-        {
-            id: 448,
-            name: 'post',
-            title: 'Skrzynka pocztowa',
-            price: 50,
-            desc: 'Stwórz firmową skrzynkę mailową mail@twoja-nazwa.pl',
-            icon: ''
-        },   
+        },
         {
             id: 354,
             name: 'rodo',

@@ -5,6 +5,8 @@ import FormShopProject from './FormShopProject';
 import FormWebsiteProject from './FormWebsiteProject';
 import FormLanguages from './FormLanguages';
 import FormShopExtraFeatures from './FormShopExtraFeatures';
+import FormSeoActions from './FormSeoActions';
+import FormTechServices from './FormTechServices';
 
 export class AssessmentForm extends Component {
     render() {
@@ -16,6 +18,8 @@ export class AssessmentForm extends Component {
                 <FormWebsiteProject />
                 <FormLanguages />
                 <FormShopExtraFeatures />
+                <FormSeoActions />
+                <FormTechServices />
             </div>
         )
     }

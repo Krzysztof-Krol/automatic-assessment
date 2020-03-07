@@ -24,7 +24,7 @@ class FormServices extends Component {
       <Container className="has-icons mb-5">
         <img src={logo} className="App-logo" alt="logo" />
         <h1 className="mb-3">Automatyczna wycena usług programistycznych</h1>
-        <p className="small mb-5">
+        <p className="small mb-3">
           Wybierz temat, który Cię interesuje.
         </p>
         <Row className="d-flex flex-row justify-content-center">

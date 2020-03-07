@@ -6,14 +6,14 @@ import LocalGroceryStoreIcon from '@material-ui/icons/LocalGroceryStore';
 
 export default function() {
     return [
-        {
-            id: 512,
-            name: 'hasProject',
-            title: 'Mam już projekt',
-            price: 0,
-            desc: "Jeżeli posiadasz już projekt graficzny do pocięcia i użycia w produkcji zlecenia",
-            icon: <EmojiEmotionsIcon/>
-        },
+        // {
+        //     id: 512,
+        //     name: 'hasProject',
+        //     title: 'Mam już projekt',
+        //     price: 0,
+        //     desc: "Jeżeli posiadasz już projekt graficzny do pocięcia i użycia w produkcji zlecenia",
+        //     icon: <EmojiEmotionsIcon/>
+        // },
         {
             id: 743,
             name: 'simpleProject',

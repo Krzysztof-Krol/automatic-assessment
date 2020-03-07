@@ -86,7 +86,8 @@
   cursor: pointer;
 }
 
-.has-icons .row > div svg:hover {
+.has-icons .row > div svg:hover,
+.App .form-checkbox .MuiIconButton-label:hover svg {
   background-color: goldenrod;
   transform: scale(1.1);
   transition: all 0.3s ease-in-out;
@@ -132,4 +133,31 @@
 
 .App .MuiOutlinedInput-notchedOutline:focus {
 	border-color: #c42257;
+}
+
+.App .MuiCheckbox-colorSecondary.Mui-checked {
+	color: white;
+}
+
+.App .MuiCheckbox-root {
+	color: rgba(255, 255, 255, 1);
+}
+
+.App .form-checkbox svg {
+	width: 0.6em;
+	height: 0.6em;
+  padding: 12px;
+  margin: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.App .form-checkbox.Mui-checked svg,
+.App .form-checkbox.Mui-checked:hover svg {
+  background: #68ce57;
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.1);
+}
+
+.MuiButtonBase-root.MuiIconButton-root.PrivateSwitchBase-root-85.MuiCheckbox-root.MuiCheckbox-colorSecondary.form-checkbox.MuiIconButton-colorSecondary {
+	margin: -15px;
 }

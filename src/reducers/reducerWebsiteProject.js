@@ -7,14 +7,14 @@ import WebIcon from '@material-ui/icons/Web';
 
 export default function() {
     return [
-        {
-            id: 11,
-            name: 'hasProject',
-            title: 'Mam już projekt',
-            price: 0,
-            desc: "Jeżeli posiadasz już projekt graficzny do pocięcia i użycia w produkcji zlecenia",
-            icon: <EmojiEmotionsIcon />
-        },
+        // {
+        //     id: 11,
+        //     name: 'hasProject',
+        //     title: 'Mam już projekt',
+        //     price: 0,
+        //     desc: "Jeżeli posiadasz już projekt graficzny do pocięcia i użycia w produkcji zlecenia",
+        //     icon: <EmojiEmotionsIcon />
+        // },
         {
             id: 79,
             name: 'businessCard',

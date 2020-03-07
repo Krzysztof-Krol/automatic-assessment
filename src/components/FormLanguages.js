@@ -56,7 +56,6 @@ class FormMaterials extends Component {
                                 }}
                                 variant="outlined" 
                                 label="Wprowadź liczbę 1-10" 
-                                variant="outlined" 
                             />
                         </FormControl>
 

@@ -21,31 +21,31 @@ export default function() {
             title: 'Sklep internetowy',
             icon: <StorefrontIcon/>
         },
-        {
-            id: 16,
-            name: 'optimization',
-            title: 'Optymalizacja SEO',
-            icon: <SpeedIcon />
-        },
-        {
-            id: 93,
-            name: 'positioning',
-            title: 'Pozycjonowanie',
-            icon: <TrendingUpIcon />
-        },
-        {
-            id: 99,
-            name: 'repair',
-            title: 'Naprawa strony',
-            icon: <BuildIcon />
-        },
-        {
-            id: 38,
-            name: 'application',
-            title: 'Aplikacja internetowa',
-            icon: <AppsIcon />
+        // {
+        //     id: 16,
+        //     name: 'optimization',
+        //     title: 'Optymalizacja SEO',
+        //     icon: <SpeedIcon />
+        // },
+        // {
+        //     id: 93,
+        //     name: 'positioning',
+        //     title: 'Pozycjonowanie',
+        //     icon: <TrendingUpIcon />
+        // },
+        // {
+        //     id: 99,
+        //     name: 'repair',
+        //     title: 'Naprawa strony',
+        //     icon: <BuildIcon />
+        // },
+        // {
+        //     id: 38,
+        //     name: 'application',
+        //     title: 'Aplikacja internetowa',
+        //     icon: <AppsIcon />
         
-        },
+        // },
         {
             id: 31,
             name: 'other',
