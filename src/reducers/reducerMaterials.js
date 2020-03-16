@@ -6,6 +6,7 @@ export default function() {
     return [
         {
             id: 51,
+            checked: false,
             name: 'allMaterials',
             title: 'Mam wszystkie materiały',
             desc: 'Zdjęcia i teksty na podstrony',
@@ -15,6 +16,7 @@ export default function() {
         },
         {
             id: 798,
+            checked: false,
             name: 'noneMaterials',
             title: 'Nie mam kompletu',
             desc: 'Materiały będą dosłane w czasie tworzenia strony',

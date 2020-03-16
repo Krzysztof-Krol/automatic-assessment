@@ -11,7 +11,6 @@ import FormExpressProduction from './FormExpressProduction';
 import FormSummary from './FormSummary';
 import {connect} from 'react-redux';
 
-
 export class AssessmentForm extends Component {
     render() {
         return(
@@ -36,5 +35,5 @@ function mapStateToProps(state){
         global: state.global,
     }
 }
-  
+
 export default connect(mapStateToProps)(AssessmentForm);

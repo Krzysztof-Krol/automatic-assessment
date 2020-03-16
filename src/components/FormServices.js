@@ -1,8 +1,10 @@
 import React, {Component} from 'react';
-import { Container, Row } from 'reactstrap'; 
-import logo from '../images/royalcode-logo.svg'
-import Service from './common/Service';
+import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
+import { Container, Row } from 'reactstrap'; 
+import logo from '../images/royalcode-logo.svg';
+import Service from './common/Service';
+import {selectOption} from '../actions/selectOption';
 
 class FormServices extends Component {
 
@@ -13,7 +15,11 @@ class FormServices extends Component {
           key={item.id} 
           serviceName={item.title}
         >
-          {item.icon}
+          <div 
+            onClick={() => this.props.selectOption(item)}
+          >
+            {item.icon}
+          </div>
         </Service>
       );
     })
@@ -36,10 +42,16 @@ class FormServices extends Component {
 }
 
 function mapStateToProps(state){
-  return{
+  return {
     global: state.global, 
     services: state.services
   }
 }
 
-export default connect(mapStateToProps)(FormServices);
+function matchDispatchToProps(dispatch){
+  return bindActionCreators({
+    selectOption: selectOption
+  }, dispatch)
+}
+
+export default connect(mapStateToProps, matchDispatchToProps)(FormServices);

@@ -1,5 +1,5 @@
 import React from 'react';
-import EmojiEmotionsIcon from '@material-ui/icons/EmojiEmotions';
+// import EmojiEmotionsIcon from '@material-ui/icons/EmojiEmotions';
 import DescriptionIcon from '@material-ui/icons/Description';
 import VerticalSplitIcon from '@material-ui/icons/VerticalSplit';
 import MenuBookIcon from '@material-ui/icons/MenuBook';
@@ -9,6 +9,7 @@ export default function() {
     return [
         // {
         //     id: 11,
+        //     checked: false,
         //     name: 'hasProject',
         //     title: 'Mam już projekt',
         //     price: 0,
@@ -17,6 +18,7 @@ export default function() {
         // },
         {
             id: 79,
+            checked: false,
             name: 'businessCard',
             title: 'Wizytówka',
             price: 999,
@@ -25,6 +27,7 @@ export default function() {
         },
         {
             id: 6,
+            checked: false,
             name: 'simpleProject',
             title: 'Prosty',
             price: 1750,
@@ -33,6 +36,7 @@ export default function() {
         },
         {
             id: 10,
+            checked: false,
             name: 'standardProject',
             title: 'Rozszerzony',
             price: 2250,
@@ -41,6 +45,7 @@ export default function() {
         },
         {
             id: 24,
+            checked: false,
             name: 'PremiumProject',
             title: 'Premium',
             price: 3500,

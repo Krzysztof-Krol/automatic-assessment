@@ -5,8 +5,9 @@ export default function() {
     return [
         {
             id: 6836,
+            checked: false,
             name: 'expressProduction',
-            title: 'Tak',
+            title: 'Ekspresowa produkcja',
             price: 0,
             multiple: 0.3,
             multipleTitle: '+30% wyceny',

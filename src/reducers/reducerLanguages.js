@@ -5,8 +5,9 @@ export default function() {
     return [
         {
             id: 679,
+            checked: false,
             name: 'additionalLanguages',
-            title: 'Tak',
+            title: 'Dodatkowe języki - Tak',
             price: 0,
             multiple: 0.2,
             multipleTitle: '+20% wyceny / język',

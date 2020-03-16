@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import { Container, Row, Col } from 'reactstrap'; 
-import Item from './common/Item';
+// import Item from './common/Item';
 import {connect} from 'react-redux';
 
 class FormSummary extends Component {

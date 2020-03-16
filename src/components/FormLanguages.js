@@ -41,6 +41,7 @@ class FormLanguages extends Component {
                     
                     {this.listAllItems()}
 
+                    
                     <Col xs="12" sm="6" md="4" xl='4' className="d-flex flex-column align-items-start justify-content-center">
                         <FormControl className="d-flex mb-0" component="fieldset">
                             <FormLabel className="text-white text-left mb-3" component="legend">Liczba dodatkowych języków</FormLabel>

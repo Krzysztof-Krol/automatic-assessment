@@ -2,6 +2,7 @@ export default function() {
     return [
         {
             id: 539,
+            checked: false,
             name: 'basicSeo',
             title: 'Podstawowe SEO',
             price: 100,
@@ -10,6 +11,7 @@ export default function() {
         },
         {
             id: 1557,
+            checked: false,
             name: 'optimization',
             title: 'Optymalizacja',
             price: 450,
@@ -18,6 +20,7 @@ export default function() {
         },
         {
             id: 5671,
+            checked: false,
             name: 'schema',
             title: 'Dane Strukturalne',
             price: 50,
@@ -26,6 +29,7 @@ export default function() {
         },
         {
             id: 5271,
+            checked: false,
             name: 'schemaPriceList',
             title: 'Dane Strukturalne Cennika',
             price: 100,
@@ -34,6 +38,7 @@ export default function() {
         },
         {
             id: 1271,
+            checked: false,
             name: 'schemaProducts',
             title: 'Dane Strukturalne Sklepu',
             price: 150,
@@ -42,6 +47,7 @@ export default function() {
         },
         {
             id: 3271,
+            checked: false,
             name: 'schemaTrueStars',
             title: 'Gwiazdki ocen Google',
             price: 100,
@@ -50,6 +56,7 @@ export default function() {
         },
         {
             id: 3571,
+            checked: false,
             name: 'schemaFakeStars',
             title: 'Sztuczne gwiazdki ocen',
             price: 200,
@@ -57,7 +64,8 @@ export default function() {
             icon: ''
         },
         {
-            id: 889,
+            id: 189,
+            checked: false,
             name: 'keywords',
             title: 'Optymalizacja treści',
             price: 250,
@@ -66,6 +74,7 @@ export default function() {
         },
         {
             id: 889,
+            checked: false,
             name: 'innerLinking',
             title: 'Linkowanie wewnętrzne',
             price: 100,
@@ -74,6 +83,7 @@ export default function() {
         },
         {
             id: 8812,
+            checked: false,
             name: 'outsideLinking',
             title: 'Linkowanie zewnętrzne',
             price: 100,
@@ -82,6 +92,7 @@ export default function() {
         },
         {
             id: 8894,
+            checked: false,
             name: 'pwa',
             title: 'Progressive Web App',
             price: 250,

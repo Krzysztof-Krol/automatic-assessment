@@ -2,6 +2,7 @@ export default function() {
     return [
         {
             id: 761,
+            checked: true,
             name: 'blog',
             title: 'Blog',
             price: 0,
@@ -10,6 +11,7 @@ export default function() {
         },
         {
             id: 631,
+            checked: false,
             name: 'googleMap',
             title: 'Mapa Google',
             price: 80,
@@ -18,6 +20,7 @@ export default function() {
         },
         {
             id: 695,
+            checked: false,
             name: 'newsletter',
             title: 'Newsletter',
             price: 100,
@@ -26,6 +29,7 @@ export default function() {
         },
         {
             id: 480,
+            checked: false,
             name: 'socialMediaIntegration',
             title: 'Integracja z social media',
             price: 50,
@@ -34,6 +38,7 @@ export default function() {
         },
         {
             id: 984,
+            checked: false,
             name: 'fbchat',
             title: 'Facebook Chat',
             price: 100,
@@ -42,6 +47,7 @@ export default function() {
         }, 
         {
             id: 448,
+            checked: false,
             name: 'analytics',
             title: 'Google Analytics',
             price: 80,
@@ -50,6 +56,7 @@ export default function() {
         },
         {
             id: 354,
+            checked: false,
             name: 'rodo',
             title: 'Informacja Cookies i RODO',
             price: 50,

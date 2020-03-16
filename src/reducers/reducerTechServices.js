@@ -2,6 +2,7 @@ export default function() {
     return [
         {
             id: 1439,
+            checked: false,
             name: 'installOnServer',
             title: 'Instalacja na serwerze',
             price: 50,
@@ -10,6 +11,7 @@ export default function() {
         },
         {
             id: 6239,
+            checked: false,
             name: 'domainParking',
             title: 'Połączenie domeny',
             price: 50,
@@ -18,6 +20,7 @@ export default function() {
         },
         {
             id: 5557,
+            checked: false,
             name: 'mailBox',
             title: 'Skrzynka pocztowa',
             price: 120,
@@ -25,7 +28,8 @@ export default function() {
             icon: ''
         },
         {
-            id: 5557,
+            id: 5547,
+            checked: false,
             name: 'installment',
             title: 'Raty',
             multiple: 0.1,
