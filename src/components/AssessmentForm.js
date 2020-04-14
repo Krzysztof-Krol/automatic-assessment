@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
 import FormServices from './FormServices';
 import FormMaterials from './FormMaterials';
 import FormShopProject from './FormShopProject';
@@ -10,30 +10,30 @@ import FormTechServices from './FormTechServices';
 import FormExpressProduction from './FormExpressProduction';
 import FormSummary from './FormSummary';
 import {connect} from 'react-redux';
+import { Button } from 'reactstrap';
 
-export class AssessmentForm extends Component {
-    render() {
-        return(
+const AssessmentForm = () => {
+    const [selectedTab, setSelectedTab] = useState(0);
+
+    const tabs = [<FormServices />,
+        <FormMaterials />,
+        <FormShopProject />,
+        <FormWebsiteProject />,
+        <FormLanguages />,
+        <FormShopExtraFeatures />,
+        <FormSeoActions />,
+        <FormTechServices />,
+        <FormExpressProduction />,
+        <FormSummary />];
+    return(
             <div>
-                <FormServices />
-                <FormMaterials />
-                <FormShopProject />
-                <FormWebsiteProject />
-                <FormLanguages />
-                <FormShopExtraFeatures />
-                <FormSeoActions />
-                <FormTechServices />
-                <FormExpressProduction />
-                <FormSummary />
+                {
+                    tabs[selectedTab]
+                }
+                <Button onClick={() => setSelectedTab(selectedTab - 1)}>Wstecz</Button>
+                <Button onClick={() => setSelectedTab(selectedTab + 1)}>Dalej</Button>
             </div>
-        )
-    }
+    );
 }
 
-function mapStateToProps(state){
-    return{
-        global: state.global,
-    }
-}
-
-export default connect(mapStateToProps)(AssessmentForm);
+export default AssessmentForm;

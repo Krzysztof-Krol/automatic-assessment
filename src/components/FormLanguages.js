@@ -7,27 +7,24 @@ import RadioGroup from '@material-ui/core/RadioGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import FormControl from '@material-ui/core/FormControl';
 import FormLabel from '@material-ui/core/FormLabel';
-import {connect} from 'react-redux';
+import { connect } from 'react-redux';
+import LanguageIcon from '@material-ui/icons/Language';
+
+const languages = [
+    {
+        id: 679,
+        checked: false,
+        name: 'additionalLanguages',
+        title: 'Dodatkowe języki - Tak',
+        price: 0,
+        multiple: 0.2,
+        multipleTitle: '+20% wyceny / język',
+        desc: "Czy życzysz sobie więcej języków, niż jeden?",
+        icon: <LanguageIcon />
+    }
+]
 
 class FormLanguages extends Component {
-
-    listAllItems() {
-        return this.props.languages.map((item) => {
-            return (
-                <Item 
-                    key={item.id}
-                >
-                    <div>{item.icon}</div>
-                    <p className="mb-2">{item.title}</p>
-                    <p className="my-3 price">{item.price > 0 ? item.price + " zł" : null}</p>
-                    <p className="item-desc">{item.desc ? item.desc : null}</p>
-                    <strong className="small">{item.discount ? item.discountTitle : null}</strong>
-                    <strong className="small">{item.multiple ? item.multipleTitle : null}</strong>
-                </Item>
-            );
-        })
-    } 
-  
     render(){
         return (
             <Container className="has-icons mb-5">
@@ -39,7 +36,22 @@ class FormLanguages extends Component {
                 </Row>
                 <Row className="d-flex flex-row justify-content-center">
                     
-                    {this.listAllItems()}
+                    {
+                        languages.map((item) => {
+                            return (
+                                <Item
+                                    key={item.id}
+                                >
+                                    <div>{item.icon}</div>
+                                    <p className="mb-2">{item.title}</p>
+                                    <p className="my-3 price">{item.price > 0 ? item.price + " zł" : null}</p>
+                                    <p className="item-desc">{item.desc ? item.desc : null}</p>
+                                    <strong className="small">{item.discount ? item.discountTitle : null}</strong>
+                                    <strong className="small">{item.multiple ? item.multipleTitle : null}</strong>
+                                </Item>
+                            );
+                        })
+                    }
 
                     
                     <Col xs="12" sm="6" md="4" xl='4' className="d-flex flex-column align-items-start justify-content-center">
@@ -65,7 +77,7 @@ class FormLanguages extends Component {
                             <RadioGroup aria-label="gender" name="gender1">
                                 <FormControlLabel value="female" control={<Radio />} label="Wprowadzę sam" />
                                 <FormControlLabel className="mb-0" value="male" control={<Radio />} label="Zlecam wprowadzenie treści" />
-                                <strong className="price text-left pl-4 ml-2 mt-0">Koszt zlecenia: +{this.props.global[0].moreLanguages[0].implementCost} zł</strong>
+                                <strong className="price text-left pl-4 ml-2 mt-0">Koszt zlecenia: zł</strong>
                             </RadioGroup>
                         </FormControl>
                     </Col>
@@ -77,8 +89,7 @@ class FormLanguages extends Component {
 
 function mapStateToProps(state){
   return{
-    global: state.global,
-    languages: state.languages,
+
   }
 }
 

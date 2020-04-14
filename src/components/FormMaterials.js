@@ -1,25 +1,32 @@
 import React, {Component} from 'react';
 import { Container, Row, Col } from 'reactstrap'; 
 import Item from './common/Item';
-import {connect} from 'react-redux';
+import { connect } from 'react-redux';
+import PlaylistAddCheckIcon from '@material-ui/icons/PlaylistAddCheck';
+import HourglassFullIcon from '@material-ui/icons/HourglassFull';
+
+const meterials = [
+    {
+        id: 51,
+        checked: false,
+        name: 'allMaterials',
+        title: 'Mam wszystkie materiały',
+        desc: 'Zdjęcia i teksty na podstrony',
+        discount: 0.2,
+        discountTitle: 'Rabat -20%',
+        icon: <PlaylistAddCheckIcon />
+    },
+    {
+        id: 798,
+        checked: false,
+        name: 'noneMaterials',
+        title: 'Nie mam kompletu',
+        desc: 'Materiały będą dosłane w czasie tworzenia strony',
+        icon: <HourglassFullIcon />
+    }
+]
 
 class FormMaterials extends Component {
-
-    listAllItems() {
-        return this.props.materials.map((item) => {
-            return (
-            <Item 
-                key={item.id} 
-            >
-                <div>{item.icon}</div>
-                <p className="mb-2">{item.title}</p>
-                <p className="item-desc">{item.desc}</p>
-                <strong className="small">{item.discount ? item.discountTitle : null}</strong>
-            </Item>
-            );
-        })
-    } 
-  
   render(){
     return (
         <Container className="has-icons mb-5">
@@ -31,7 +38,20 @@ class FormMaterials extends Component {
                 </Col>
             </Row>
             <Row className="d-flex flex-row justify-content-center">
-                {this.listAllItems()}
+                {
+                    meterials.map((item) => {
+                        return (
+                            <Item
+                                key={item.id}
+                            >
+                                <div>{item.icon}</div>
+                                <p className="mb-2">{item.title}</p>
+                                <p className="item-desc">{item.desc}</p>
+                                <strong className="small">{item.discount ? item.discountTitle : null}</strong>
+                            </Item>
+                        );
+                    })
+                }
             </Row>
         </Container>
     );

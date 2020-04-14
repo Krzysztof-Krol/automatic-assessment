@@ -1,27 +1,24 @@
 import React, {Component} from 'react';
 import { Container, Row, Col } from 'reactstrap'; 
 import Item from './common/Item';
-import {connect} from 'react-redux';
+import { connect } from 'react-redux';
+import SpeedIcon from '@material-ui/icons/Speed';
+
+const languages = [
+    {
+        id: 6836,
+        checked: false,
+        name: 'expressProduction',
+        title: 'Ekspresowa produkcja',
+        price: 0,
+        multiple: 0.3,
+        multipleTitle: '+30% wyceny',
+        desc: "Produkcja zostanie przyspieszona i zrealizowana jako priorytet",
+        icon: <SpeedIcon />
+    }
+]
 
 class FormExpressProduction extends Component {
-
-    listAllItems() {
-        return this.props.languages.map((item) => {
-            return (
-                <Item 
-                    key={item.id}
-                >
-                    <div>{item.icon}</div>
-                    <p className="mb-2">{item.title}</p>
-                    <p className="my-3 price">{item.price > 0 ? item.price + " zł" : null}</p>
-                    <p className="item-desc">{item.desc ? item.desc : null}</p>
-                    <strong className="small">{item.discount ? item.discountTitle : null}</strong>
-                    <strong className="small">{item.multiple ? item.multipleTitle : null}</strong>
-                </Item>
-            );
-        })
-    } 
-  
     render(){
         return (
             <Container className="has-icons mb-5">
@@ -33,7 +30,22 @@ class FormExpressProduction extends Component {
                 </Row>
                 <Row className="d-flex flex-row justify-content-center">
                     
-                    {this.listAllItems()}
+                    {
+                        languages.map((item) => {
+                            return (
+                                <Item
+                                    key={item.id}
+                                >
+                                    <div>{item.icon}</div>
+                                    <p className="mb-2">{item.title}</p>
+                                    <p className="my-3 price">{item.price > 0 ? item.price + " zł" : null}</p>
+                                    <p className="item-desc">{item.desc ? item.desc : null}</p>
+                                    <strong className="small">{item.discount ? item.discountTitle : null}</strong>
+                                    <strong className="small">{item.multiple ? item.multipleTitle : null}</strong>
+                                </Item>
+                            );
+                        })
+                    }
 
                 </Row>
             </Container>
@@ -43,8 +55,7 @@ class FormExpressProduction extends Component {
 
 function mapStateToProps(state){
   return{
-    global: state.global,
-    languages: state.expressProduction,
+   
   }
 }
 

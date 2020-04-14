@@ -1,26 +1,52 @@
 import React, {Component} from 'react';
 import { Container, Row, Col } from 'reactstrap'; 
 import Item from './common/Item';
-import {connect} from 'react-redux';
+import { connect } from 'react-redux';
+// import EmojiEmotionsIcon from '@material-ui/icons/EmojiEmotions';
+import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket';
+import LocalMallIcon from '@material-ui/icons/LocalMall';
+import LocalGroceryStoreIcon from '@material-ui/icons/LocalGroceryStore';
+
+const projects = [
+    // {
+    //     id: 512,
+    //     checked: false,
+    //     name: 'hasProject',
+    //     title: 'Mam już projekt',
+    //     price: 0,
+    //     desc: "Jeżeli posiadasz już projekt graficzny do pocięcia i użycia w produkcji zlecenia",
+    //     icon: <EmojiEmotionsIcon/>
+    // },
+    {
+        id: 743,
+        checked: false,
+        name: 'simpleProject',
+        title: 'Prosty',
+        price: 2250,
+        desc: '1 projekt str. głównej, 30h pracy grafika',
+        icon: <ShoppingBasketIcon />
+    },
+    {
+        id: 432,
+        checked: false,
+        name: 'standardProject',
+        title: 'Rozszerzony',
+        price: 3250,
+        desc: '2 projekty str. głównej, 50h pracy grafika',
+        icon: <LocalMallIcon />
+    },
+    {
+        id: 543,
+        checked: false,
+        name: 'PremiumProject',
+        title: 'Premium',
+        price: 4250,
+        desc: '3 projekty str. głównej, 70h pracy grafika',
+        icon: <LocalGroceryStoreIcon />
+    }   
+]
 
 class FormShopProject extends Component {
-
-    listAllItems() {
-        return this.props.project.map((item) => {
-            return (
-            <Item 
-                key={item.id} 
-            >
-                <div>{item.icon}</div>
-                <p className="mb-2">{item.title}</p>
-                <p className="my-1 price">{item.price > 0 ? item.price+" zł" : ""}</p>
-                <p className="item-desc">{item.desc}</p>
-                <strong className="small">{item.discount ? item.discountTitle : null}</strong>
-            </Item>
-            );
-        })
-    } 
-  
   render(){
     return (
         <Container className="has-icons mb-5">
@@ -31,7 +57,21 @@ class FormShopProject extends Component {
                 </Col>
             </Row>
             <Row className="d-flex flex-row justify-content-center">
-                {this.listAllItems()}
+                {
+                    projects.map((item) => {
+                        return (
+                            <Item
+                                key={item.id}
+                            >
+                                <div>{item.icon}</div>
+                                <p className="mb-2">{item.title}</p>
+                                <p className="my-1 price">{item.price > 0 ? item.price + " zł" : ""}</p>
+                                <p className="item-desc">{item.desc}</p>
+                                <strong className="small">{item.discount ? item.discountTitle : null}</strong>
+                            </Item>
+                        );
+                    })
+                }
             </Row>
         </Container>
     );

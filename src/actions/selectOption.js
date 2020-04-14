@@ -1,7 +1,7 @@
-export const selectOption = (option) => {
-    console.log("Choosen option: ", option.title);
+export const selectOption = (options = []) => {
+    console.log("Choosen option: ", options);
     return {
         type: "OPTION_SELECTED",
-        payload: option
+        options
     }
 };
